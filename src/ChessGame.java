@@ -164,6 +164,8 @@ public class ChessGame {
         }
     }
 
+    //moveResultsInSelfCheck - Make a copy of the body and test run the proposed
+    //move. If it results in self check, return false
     public boolean moveResultsInSelfCheck(Move move) {
         Board testingBoard = board.createCopy();
         testingBoard.movePiece(move.getFrom(), move.getTo());

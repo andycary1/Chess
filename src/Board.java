@@ -67,6 +67,7 @@ public class Board {
         }
     }
 
+    //locateKing - find the cell of the specified king on the board
     public Cell locateKing(boolean whiteTurn) {
         for (int x = 0; x < 8; x++) {
             for (int y = 0; y < 8; y++) {
@@ -81,6 +82,9 @@ public class Board {
         return null;
     }
 
+    //findFirstPieceInDirection - Search in a particular direction and find the
+    //first piece that is in the path up to and including the endLocation. If
+    //endLocation is null, search to the end of the board
     public Piece findFirstPieceInDirection(Cell startLocation, String direction, Cell endLocation) {
         int x = startLocation.getX();
         int y = startLocation.getY();
@@ -171,6 +175,7 @@ public class Board {
         System.out.println("         a      b      c      d      e      f      g      h");
     }
 
+    //createCopy - Copy the board and all the pieces to a new object
     public Board createCopy() {
         Board boardCopy = new Board();
         for (int x = 0; x < 8; x++) {
