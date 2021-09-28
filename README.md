@@ -6,7 +6,7 @@ Instructions:
 
 1. Create a build folder with "rmdir build"  
 2. Compile the .java files into the build folder with "javac -d build src/*.java".  
-2. Run the file named Driver.java with "java -cp "./build" Driver".  
+2. Run the file named Driver.java with "java -cp ./build Driver".  
 3. The game will begin.  
 
 Notes:  
@@ -31,3 +31,5 @@ brute force but unsure how to optimise it yet.
 
 - Make it into an interactive webpage: Build into a web app with click and drag
 functionality  
+
+**TEST2**
